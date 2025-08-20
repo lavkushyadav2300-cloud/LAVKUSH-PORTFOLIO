@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" contant="width=device-width, initial-scale=1.0">
+        <title>my resume </title>
+        <style>
+            body {
+        font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      background: url('video.mp4') no-repeat center center fixed; /* वीडियो बैकग्राउंड */
+      background-size: cover;
+      color: #ffffff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    /* Video background container */
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+                
+           .container{
+            .container {
+      display: flex;
+      justify-content: space-between; /* photo centre, resume right */
+      align-items: flex-start;
+      padding: 20px;
+            } 
+            h2, h2{
+                color: rgb(240, 232, 1);
+            } 
+            .toggle-btn{
+                margin:20px;
+                padding:10px 20px;
+                background-color: rgb(255, 252, 252);
+                color: rgb(73, 0, 243);
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+            }   
+            footer{
+                text-align: center;
+                margin: 20px;
+                font-size: 14px;
+                color: aliceblue;
+            }         
+            body.dark{
+                background: #fffcfc;
+                color: #f0f0f0;
+            }
+            body.container {
+                background: #2c2c2c;
+            }
+            body.dark h1, body.dark h2{
+                colore:#f5f5f5;
+            }
+            body.dark .toggle-btn {
+                background: #f0f0f0;
+                color: #f8f5f5;
+            }
+        </style>
+   </head>
+   <body>
+    <div style="text-align:left;"></div>
+    <video autoplay muted loop id="bg-video">
+    <source src="mi.mp4" type="video/mp4">
+  </video>
+
+  
+    <button class="toggle-btn " oneclick="toggle mode()">dark mode </button>
+
+    <div class="container">
+         <H1> *Created with Self Learning*</H1>
+        <h1>LAVKUSH YADAV </h1>
+        <P><strong>WEB DEVELOPER | DESIGNER</strong></P>
+        
+        <H2> INTRODUCTION</H2>
+        <P> I AM A WEB DEVELOPER WITH EXPERIENCE IN HTML,CSS JAVA SCRIPT AND WORDPRESS.</P>
+        <H2> EDUCATION</H2>
+        <UL>
+            <LI> B.sc IN COMPUTER SCIENCE</LI>
+        </UL>
+        <H2> SKILL</H2>
+       <UL>
+        <LI> WORDPRESS INSTALLATION AND SETUP </LI>
+        <LI>HTML,CSS AND JAVA SCRIPT</LI>
+        <LI> BASIC SEO OPTIMIZATION</LI>
+       </UL>
+       
+       <H2>CONTACT</H2>
+       <P>EMAIL: LAVKUSHYADAV2300@GMAIL.COM</P>
+       <P>MOBILE NO.: 8303388909</P>
+    </div>
+    <FOOTER> 
+         <p>&copy; 2025 Lavkush Portfolio. All Rights Reserved.</p>
+    </FOOTER>
+    <SCRIPT>
+        document.getElementById('year').textContent = new date().get full year();
+
+        function toggle mode(){
+            document.body.classlist.toggle('dark')
+            const btn=document.querySelector('.toggle-btn');
+           if(document.body.classList.contains('dark')){
+            btn.contains= "light mode ";
+           } else{
+            btn.textContent="dark mode";
+           }
+        }
+    </SCRIPT>
+</body>
+</HTML>
